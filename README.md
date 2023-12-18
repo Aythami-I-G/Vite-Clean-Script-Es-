@@ -1,5 +1,6 @@
 # Vite-Clean-Script-Es-
 This file create a simple Vite-React-Js Script for Linux
+
                                             IMPORTANT
 Every page file, Main.jsx and App.jsx have a SaSS instead of css. Please change it if you want
 
