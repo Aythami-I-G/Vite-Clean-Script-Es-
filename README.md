@@ -2,7 +2,7 @@
 This file create a simple Vite-React-Js Script for Linux
 
 ## Important
-
+##### It uses Vite 5 and las Node.js
 ###### Every page file, Main.jsx and App.jsx have a SaSS instead of css. Please change it if you want
 
 1. Feel free to use it. Every suggestion for deprecated library would be helpfull
