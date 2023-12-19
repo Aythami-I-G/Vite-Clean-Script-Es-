@@ -139,12 +139,12 @@ if [ "$install_axios" == "y" ]; then
     echo "axios ha sido instalado."
 fi
 
-# Pregunta si se desea instalar react-router-dom@6
-read -p "¿Deseas instalar react-router-dom@6? (y/n): " install_router
+# Pregunta si se desea instalar react_router_dom
+read -p "¿Deseas instalar react_router_dom? (y/n): " install_react_router_dom
 
-if [ "$install_router" == "y" ]; then
+if [ "$install_react_router_dom" == "y" ]; then
     npm install react-router-dom@6
-    echo "react-router-dom@6 ha sido instalado."
+    echo "react_router_dom ha sido instalado."
 fi
 
 # Pregunta si se desea instalar Morgan
@@ -155,26 +155,26 @@ if [ "$install_morgan" == "y" ]; then
     echo "morgan ha sido instalado."
 fi
 
-# Pregunta si se desea instalar json server
-read -p "¿Deseas instalar json server? (y/n): " install_json server
+# Pregunta si se desea instalar json_server
+read -p "¿Deseas instalar json_server? (y/n): " install_json_server
 
-if [ "$install_json server" == "y" ]; then
-    npm install -g json-server
-    echo "json server ha sido instalado."
+if [ "$install_json_server" == "y" ]; then
+    npm install json-server
+    echo "json_server ha sido instalado."
 fi
 
-# Pregunta si se desea instalar express
+# Pregunta si se desea instalar express --save
 read -p "¿Deseas instalar express? (y/n): " install_express
 
 if [ "$install_express" == "y" ]; then
-    npm install express --save
+    npm install express
     echo "express ha sido instalado."
 fi
 
-# Pregunta si se desea instalar mysql
-read -p "¿Deseas instalar mysql? (y/n): " install_mysql
+# Pregunta si se desea instalar mysql2
+read -p "¿Deseas instalar mysql2? (y/n): " install_mysql2
 
-if [ "$install_mysql" == "y" ]; then
+if [ "$install_mysql2" == "y" ]; then
     npm install mysql2
     echo "mysql ha sido instalado."
 fi
@@ -203,36 +203,20 @@ if [ "$install_cors" == "y" ]; then
     echo "cors ha sido instalado."
 fi
 
-# Pregunta si se desea instalar eslint_prettier
-read -p "¿Deseas instalar eslint_prettier? (y/n): " install_eslint_prettier
+# Pregunta si se desea instalar prettier
+read -p "¿Deseas instalar prettier? (y/n): " install_prettier
 
-if [ "$install_eslint_prettier" == "y" ]; then
-    npm install -D eslint-config-prettier
-    echo "eslint-prettier ha sido instalado."
+if [ "$install_prettier" == "y" ]; then
+    npm i prettier
+    echo "prettier ha sido instalado."
 fi
 
-# Pregunta si se desea instalar react_Tab_navigation
-read -p "¿Deseas instalar react_Tab_navigation? (y/n): " install_react_Tab_navigation
+# Pregunta si se desea instalar react_navigation_native
+read -p "¿Deseas instalar react_navigation_native? (y/n): " install_react_navigation_native
 
-if [ "$install_react_navigation" == "y" ]; then
-    npm install @react-navigation/bottom-tabs
-    echo "react_Tab_navigation ha sido instalado."
-fi
-
-# Pregunta si se desea instalar React_Navigator
-read -p "¿Deseas instalar React_Navigator? (y/n): " install_React_Navigator
-
-if [ "$install_React_Navigator" == "y" ]; then
-    npm install @react-navigation/native-stack
-    echo "React_Navigator ha sido instalado."
-fi
-
-# Pregunta si se desea instalar React_Navigation
-read -p "¿Deseas instalar React_Navigation? (y/n): " install_React_Navigation
-
-if [ "$install_React_Navigation" == "y" ]; then
+if [ "$install_react_navigation_native" == "y" ]; then
     npm install @react-navigation/native
-    echo "React_Navigation ha sido instalado."
+    echo "react_navigation_native ha sido instalado."
 fi
 
 # Pregunta si se desea instalar Prop_types
@@ -243,11 +227,23 @@ if [ "$install_Prop_types" == "y" ]; then
     echo "Prop_types ha sido instalado."
 fi
 
-read -p "¿Deseas instalar SaSS? (y/n): " install_SaSS
+read -p "¿Deseas instalar sass? (y/n): " install_sass
 
-if [ "$install_Prop_SaSS" == "y" ]; then
-    npm install sass
+if [ "$install_sass" == "y" ]; then
+    npm i sass
     echo "SaSS ha sido instalado."
+fi
+
+read -p "¿Desea instalar mui_material emotion_react emotion_style? (y/n): " install_mui_material_emotion_react_emotion_style
+if [ "$install_mui_material_emotion_react_emotion_style" == "y" ]; then
+    npm install @mui/material @emotion/react @emotion/styled
+    echo "mui_material emotion_react emotion_style ha sido instalado"
+fi
+
+read -p "¿Desea instalar fontsource_roboto? (y/n): " install_fontsource_roboto
+if [ "$install_fontsource_roboto" == "y" ]; then
+    npm install @fontsource/roboto
+    echo "fontsource_roboto ha sido instalado"
 fi
 
 # Información adicional
